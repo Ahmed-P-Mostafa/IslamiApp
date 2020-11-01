@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ebc467</color>
+    <color name="colorPrimaryDark">#46352B</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="pagingColor">#46352B</color>
+    <color name="gray_50">#E2E0E0</color>
+    <color name="gray_300">#5F5E5E</color>
+    <color name="dividerColor">#FFEB3B</color>
+    <color name="whiteColor">#FFFFFF</color>
+</resources>

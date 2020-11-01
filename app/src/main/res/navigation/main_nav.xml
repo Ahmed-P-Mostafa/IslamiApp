@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/QuranFragment">
+
+    <fragment
+        android:id="@+id/QuranFragment"
+        android:name="com.example.quranproject.QuranFragment"
+        android:label="fragment_read"
+        tools:layout="@layout/fragment_quran" >
+        <action
+            android:id="@+id/From_Quran_To_Read"
+            app:destination="@id/readFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/From_Quran_To_Sebha"
+            app:destination="@id/sebhaFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/From_Quran_To_Hadith"
+            app:destination="@id/hadithFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/readFragment"
+        android:name="com.example.quranproject.ReadFragment"
+        android:label="fragment_read"
+        tools:layout="@layout/fragment_read" >
+        <argument
+            android:name="suraNumber"
+            app:argType="integer"/>
+        <argument
+            android:name="suraName"
+            app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.quranproject.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/from_Splash_To_Quran"
+            app:destination="@id/QuranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hadithFragment"
+        android:name="com.example.quranproject.HadithFragment"
+        android:label="fragment_hadith"
+        tools:layout="@layout/fragment_hadith" >
+        <action
+            android:id="@+id/From_Hadith_To_Read_Hadith"
+            app:destination="@id/hadithDescriptionFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/sebhaFragment"
+        android:name="com.example.quranproject.SebhaFragment"
+        android:label="fragment_sebha"
+        tools:layout="@layout/fragment_sebha" />
+    <fragment
+        android:id="@+id/hadithDescriptionFragment"
+        android:name="com.example.quranproject.HadithDescriptionFragment"
+        android:label="fragment_hadith_description"
+        tools:layout="@layout/fragment_hadith_description" >
+        <argument
+            android:name="hadithNumber"
+            app:argType="integer" />
+        <argument
+            android:name="hadithName"
+            app:argType="string" />
+    </fragment>
+</navigation>

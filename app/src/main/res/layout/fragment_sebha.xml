@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    android:padding="12dp"
+
+    tools:context=".SebhaFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <ImageView
+        android:id="@+id/sebha_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/tasbih"
+        app:layout_constraintBottom_toTopOf="@id/reset_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <ImageView
+        android:id="@+id/reset_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_reset"
+        app:layout_constraintBottom_toTopOf="@id/praise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sebha_icon" />
+
+    <TextView
+        android:id="@+id/praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo_extralight"
+        android:padding="4dp"
+        android:text="@string/single_counter"
+        android:textColor="@color/colorAccent"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@id/praiseCounter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset_icon" />
+
+    <TextView
+        android:id="@+id/allPraise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo_extralight"
+        android:padding="4dp"
+        android:text="@string/all_counters"
+        android:textColor="@color/colorAccent"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/praise" />
+
+    <TextView
+        android:id="@+id/praiseCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/counter_background"
+        android:gravity="center"
+        android:minEms="3"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/_0"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/praise"
+        app:layout_constraintTop_toBottomOf="@id/praise" />
+
+    <TextView
+        android:id="@+id/allPraiseCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/counter_background"
+        android:gravity="center"
+        android:minEms="3"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/_0"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/allPraise" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/counter_background"
+        android:entries="@array/spinnerArray"
+        android:layoutDirection="rtl"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/praise"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

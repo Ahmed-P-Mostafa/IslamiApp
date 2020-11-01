@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Quran Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="readMoshaf">قراءة المصحف</string>
+    <string name="listen">استماع</string>
+    <string name="read">قراءه</string>
+    <string name="translate">ترجمه وتفسير</string>
+    <string name="search">بحث</string>
+    <string name="statics">احصائيات</string>
+    <string name="quran">القران الكريم</string>
+    <string name="seb7a"> السبحه الالكترونيه</string>
+    <string name="hadith"> الحديث النبوي</string>
+    <string name="single_counter">التسبيحه</string>
+    <string name="all_counters">مجموع التسبيحات</string>
+    <string name="_0">0</string>
+    <string-array name="spinnerArray">
+        <item>الحمدلله</item>
+        <item>الله اكبر</item>
+        <item>سبحان الله</item>
+        <item>استغفر الله</item>
+        <item>لا اله الا الله</item>
+        <item>سبحان الله وبحمده سبحان الله العظيم</item>
+       </string-array>
+
+</resources>

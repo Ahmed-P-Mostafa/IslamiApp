@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuranFragment"
+    android:background="@drawable/mainbackground">
+
+
+    <ImageView
+        android:id="@+id/quran_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".25"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/quran_logo_colored"
+        android:adjustViewBounds="true"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quranRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/soura_item"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="horizontal"
+        app:spanCount="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pageIndicatorView"
+        app:layout_constraintTop_toBottomOf="@id/quran_IV"
+        android:padding="10dp"
+        />
+
+    <com.arindicatorview.ARIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:indicator_size="30"
+        app:number_of_indicators="5"
+        app:indicator_color="@color/colorAccent"
+        app:selected_color="@color/gray_300"
+        app:indicator_animation="@anim/zoom_in"
+        app:indicator_shape="@drawable/round_shape"
+        app:indicator_scrubbing="true"
+        app:animate_indicator_scrubbing="false"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quranRecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layoutDirection="rtl"
+        android:layout_margin="8dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

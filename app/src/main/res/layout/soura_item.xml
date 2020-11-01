@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/item_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintWidth_percent="0.33"
+        android:src="@drawable/item_quraan_name_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/item_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pagingColor"
+        android:textSize="32sp"
+        android:fontFamily="@font/naskh"
+        app:layout_constraintStart_toStartOf="@id/item_IV"
+        app:layout_constraintEnd_toEndOf="@id/item_IV"
+        app:layout_constraintTop_toTopOf="@id/item_IV"
+        app:layout_constraintBottom_toBottomOf="@id/item_IV"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
