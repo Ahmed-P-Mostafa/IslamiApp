@@ -1,10 +1,11 @@
-package com.example.quranproject;
+package com.example.quranproject.ui;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.PagerSnapHelper;
@@ -20,6 +21,8 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 
 import com.arindicatorview.ARIndicatorView;
+//import com.example.quranproject.QuranFragmentDirections;
+import com.example.quranproject.R;
 import com.example.quranproject.adapters.QuranAdapter;
 
 public class QuranFragment extends Fragment  {
@@ -64,10 +67,12 @@ public class QuranFragment extends Fragment  {
             @Override
             public void onItemClicked(int pos) {
                 // init navigation action to Quran Chapter Description
-                QuranFragmentDirections.FromQuranToRead action = QuranFragmentDirections.FromQuranToRead(pos,ArSuras[pos]);
-                // put safe args for action
+
+                //NavDirections action = QuranFragmentDirections.FromQuranToRead(pos, ArSuras[pos]);
+               QuranFragmentDirections.FromQuranToRead action = QuranFragmentDirections.FromQuranToRead(pos,ArSuras[pos]);
+                /* // put safe args for action
                 action.setSuraNumber(pos);
-                action.setSuraName(ArSuras[pos]);
+                action.setSuraName(ArSuras[pos]);*/
                 Navigation.findNavController(view).navigate(action);
             }
         });

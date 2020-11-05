@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/QuranFragment"
-        android:name="com.example.quranproject.QuranFragment"
+        android:name="com.example.quranproject.ui.QuranFragment"
         android:label="fragment_read"
         tools:layout="@layout/fragment_quran" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/readFragment"
-        android:name="com.example.quranproject.ReadFragment"
+        android:name="com.example.quranproject.ui.ReadFragment"
         android:label="fragment_read"
         tools:layout="@layout/fragment_read" >
         <argument
@@ -41,7 +41,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.quranproject.SplashFragment"
+        android:name="com.example.quranproject.ui.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/hadithFragment"
-        android:name="com.example.quranproject.HadithFragment"
+        android:name="com.example.quranproject.ui.HadithFragment"
         android:label="fragment_hadith"
         tools:layout="@layout/fragment_hadith" >
         <action
@@ -60,12 +60,12 @@
     </fragment>
     <fragment
         android:id="@+id/sebhaFragment"
-        android:name="com.example.quranproject.SebhaFragment"
+        android:name="com.example.quranproject.ui.SebhaFragment"
         android:label="fragment_sebha"
         tools:layout="@layout/fragment_sebha" />
     <fragment
         android:id="@+id/hadithDescriptionFragment"
-        android:name="com.example.quranproject.HadithDescriptionFragment"
+        android:name="com.example.quranproject.ui.HadithDescriptionFragment"
         android:label="fragment_hadith_description"
         tools:layout="@layout/fragment_hadith_description" >
         <argument
@@ -75,4 +75,9 @@
             android:name="hadithName"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.example.quranproject.ui.RadioFragment"
+        android:label="fragment_radio"
+        tools:layout="@layout/fragment_radio" />
 </navigation>

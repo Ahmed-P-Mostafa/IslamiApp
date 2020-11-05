@@ -1,16 +1,14 @@
-package com.example.quranproject
+package com.example.quranproject.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.quranproject.QuranFragmentDirections.FromQuranToRead
+//import com.example.quranproject.HadithFragmentDirections
+import com.example.quranproject.R
 import com.example.quranproject.adapters.QuranAdapter
 import com.example.quranproject.adapters.QuranAdapter.OnItemClickListenerInterface
 import kotlinx.android.synthetic.main.fragment_hadith.*
@@ -42,7 +40,8 @@ class HadithFragment : Fragment() {
         hadithRecyclerView.adapter = adapter
         adapter.onSuraClicked(object : OnItemClickListenerInterface {
             override fun onItemClicked(pos: Int) {
-                val action  = HadithFragmentDirections.FromHadithToReadHadith(pos,"حديث "+(pos+1))
+                val action  =
+                    HadithFragmentDirections.FromHadithToReadHadith(pos, "حديث " + (pos + 1))
                 findNavController().navigate(action)
             }
         })

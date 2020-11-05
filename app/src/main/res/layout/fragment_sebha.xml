@@ -7,7 +7,7 @@
     android:background="@drawable/mainbackground"
     android:padding="12dp"
 
-    tools:context=".SebhaFragment">
+    tools:context=".ui.SebhaFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top"

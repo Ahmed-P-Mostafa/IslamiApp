@@ -1,4 +1,4 @@
-package com.example.quranproject
+package com.example.quranproject.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.quranproject.R
+//import com.example.quranproject.ReadFragmentArgs
 import com.example.quranproject.adapters.*
 import kotlinx.android.synthetic.main.fragment_read.*
 import java.io.BufferedReader

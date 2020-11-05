@@ -1,6 +1,5 @@
-package com.example.quranproject
+package com.example.quranproject.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
@@ -8,7 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.quranproject.R
+//import com.example.quranproject.SplashFragmentDirections
 
 
 class SplashFragment : Fragment() {

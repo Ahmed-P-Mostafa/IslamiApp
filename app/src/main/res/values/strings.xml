@@ -14,6 +14,7 @@
     <string name="single_counter">التسبيحه</string>
     <string name="all_counters">مجموع التسبيحات</string>
     <string name="_0">0</string>
+    <string name="radio">راديو القران</string>
     <string-array name="spinnerArray">
         <item>الحمدلله</item>
         <item>الله اكبر</item>
@@ -21,6 +22,6 @@
         <item>استغفر الله</item>
         <item>لا اله الا الله</item>
         <item>سبحان الله وبحمده سبحان الله العظيم</item>
-       </string-array>
+    </string-array>
 
 </resources>

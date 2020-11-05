@@ -1,4 +1,4 @@
-package com.example.quranproject
+package com.example.quranproject.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.quranproject.R
 import kotlinx.android.synthetic.main.fragment_sebha.*
 
 
