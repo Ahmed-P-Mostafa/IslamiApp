@@ -1,8 +1,17 @@
 # IslamiApp
 
-application for Quran, Hadith, Tasbeh, and Quran Radio
+Application for Quran, Hadith, Tasbeh, and Quran Radio
 
-you can read Holy Quraan and Hadith along side you can play Quraan radio for more than 50 channels.
+You can:
+
+* Yead Holy Quraan
+
+* Read Hadith 
+
+* Count Praise
+
+* Play Quraan radio for more than 50 channels.
+
 
 ## Getting Started
 
