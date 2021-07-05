@@ -11,7 +11,7 @@ You can:
 
 * Count Praise
 
-* Play Quraan radio for more than 50 channels.
+* Play Quraan radio for more than 50 channels
 
 
 ## Getting Started
