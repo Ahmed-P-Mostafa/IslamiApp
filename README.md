@@ -1,3 +1,4 @@
+
 # IslamiApp
 
 Application for Quran, Hadith, Tasbeh, and Quran Radio
@@ -20,6 +21,11 @@ download the repo as zip file or you can clone it from link below:
 ```
 https://github.com/Ahmed-P-Mostafa/IslamiApp.git
 ```
+
+https://user-images.githubusercontent.com/61784191/124522132-69b18d80-ddf2-11eb-84d8-abfb33cc3ae3.mp4  
+
+https://user-images.githubusercontent.com/61784191/124522224-c90f9d80-ddf2-11eb-87ca-47010386dc25.mp4
+
 
 ### Prerequisites
 
